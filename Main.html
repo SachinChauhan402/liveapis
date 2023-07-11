@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dog Details</title>
+  
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<script src="script.js"></script>
+<body>
+  <div class="outermost">
+    <div class="containerthree">
+      <h1>Breaking Bad Quotes</h1>
+      <div id="quoteContainer"></div>
+      <button type="button" class="btn btn-primary" onclick="getQuote()">Get Quote</button>
+    </div>
+  <h1 style="margin-top: 30px;">Select a Dog</h1>
+  <select id="dogSelect" onchange="displayDogDetails()">
+    <option value="">Select a dog</option>
+  </select>
+
+  <h2>Dog Details</h2>
+  <div id="dogDetails">
+  
+    <!-- Dog details will be rendered here -->
+  </div>
+
+  <div class="containersecond">
+    <h1>UV Data</h1>
+    <form>
+        <div class="form-group">
+            <label for="latitude">Latitude:</label>
+            <input type="text" class="form-control" id="latitude" placeholder="Enter latitude">
+        </div>
+        <div class="form-group">
+            <label for="longitude">Longitude:</label>
+            <input type="text" class="form-control" id="longitude" placeholder="Enter longitude">
+        </div>
+        <div class="form-group">
+            <label for="altitude">Altitude:</label>
+            <input type="text" class="form-control" id="altitude" placeholder="Enter altitude">
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" class="form-control" id="date">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="getUVData()">Get UV Data</button>
+    </form>
+    <div id="result" class="result"></div>
+</div>
+
+</div>
+
